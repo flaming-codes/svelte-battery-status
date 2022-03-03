@@ -1,3 +1,7 @@
+<script lang="ts" context="module">
+  export const prerender = true;
+</script>
+
 <script lang="ts">
   import { batteryStore } from "svelte-battery";
 </script>
@@ -14,8 +18,4 @@
 
 <a href="/derived" aria-label="Link to derived store example"
   >Example for a derived store (subscription to specific store values)</a
->
-
-<a href="/prerendered" aria-label="Link to prerendered store example"
-  >Example to show usage w/ prerendered page (content is the same, just a POC)</a
 >

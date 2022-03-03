@@ -16,15 +16,15 @@ This library provides a simple readable store that automatically subscribes to e
 
 ```svelte
 <script lang="ts">
-	import { batteryStore } from 'svelte-battery';
+  import { batteryStore } from 'svelte-battery';
 </script>
 
 <ul>
-	<li>State: {$batteryStore.state}</li>
-	<li>isCharging: {$batteryStore.isCharging}</li>
-	<li>chargeCompleteInSec: {$batteryStore.chargeCompleteInSec}</li>
-	<li>dischargeCompleteInSec: {$batteryStore.dischargeCompleteInSec}</li>
-	<li>level: {$batteryStore.level}</li>
+  <li>State: {$batteryStore.state}</li>
+  <li>isCharging: {$batteryStore.isCharging}</li>
+  <li>chargeCompleteInSec: {$batteryStore.chargeCompleteInSec}</li>
+  <li>dischargeCompleteInSec: {$batteryStore.dischargeCompleteInSec}</li>
+  <li>level: {$batteryStore.level}</li>
 </ul>
 ```
 
@@ -34,10 +34,10 @@ To subscribe to changes for only a specific selection of values, simply create a
 
 ```svelte
 <script lang="ts">
-	import { batteryStore } from 'svelte-battery';
-	import { derived } from 'svelte/store';
+  import { batteryStore } from 'svelte-battery';
+  import { derived } from 'svelte/store';
 
-	const level = derived(batteryStore, ($store) => $store.level);
+  const level = derived(batteryStore, ($store) => $store.level);
 </script>
 
 level: {$level}

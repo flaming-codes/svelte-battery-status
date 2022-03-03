@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "svelte-battery-status",
   "description": "A store implementation for Svelte to use the Battery Status API for PWAs",
   "svelte": "index.js",
@@ -28,6 +28,7 @@
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
     "pub": "npm publish --access public ./package",
+    "pkgpub": "npm run package && npm run pub",
     "copy:files": "npx copyfiles ../README.md ../LICENSE pkg"
   },
   "devDependencies": {

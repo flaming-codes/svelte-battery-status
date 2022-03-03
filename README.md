@@ -1,4 +1,4 @@
-# Svelte Battery PWA API Store
+# Svelte Battery Status API
 
 This library provides a readable Svelte store to use a PWA's access to the [`Battery Status API`](https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API), available on the navigator. It allows you to read charging levels as well as certain charging thresholds.
 

@@ -1,11 +1,11 @@
 {
   "version": "1.0.0",
-  "name": "svelte-battery",
-  "description": "A store implementation for Svelte to use the BatteryManager API for PWAs",
+  "name": "svelte-battery-status",
+  "description": "A store implementation for Svelte to use the Battery Status API for PWAs",
   "svelte": "index.js",
   "keywords": [
-    "svelte battery",
-    "battery pwa api sveltekit"
+    "svelte battery status api",
+    "battery status pwa api sveltekit"
   ],
   "homepage": "https://github.com/flaming-codes/svelte-battery",
   "repository": {

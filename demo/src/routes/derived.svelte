@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { batteryStore } from "svelte-battery";
+  import { batteryStore } from "svelte-battery-status";
   import { derived } from "svelte/store";
 
   const level = derived(batteryStore, ($store) => $store.level);

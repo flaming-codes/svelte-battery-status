@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { batteryStore } from "svelte-battery";
+  import { batteryStore } from "svelte-battery-status";
 </script>
 
 <h1>Svelte Battery PWA API</h1>

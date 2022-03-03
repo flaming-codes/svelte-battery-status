@@ -1,11 +1,11 @@
 # Svelte Battery PWA API Store
 
-This repository hosts the code for the Svelte store to use a PWA's access to the `BatteryManager`, available on the navigator. It allows you to read charging levels as well as certain charging thresholds. `pkg` contains the actual code to build the lib. `demo` contains a skeleton app to demonstrate the functionality.
+This library provides a readable Svelte store to use a PWA's access to the [`Battery Status API`](https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API), available on the navigator. It allows you to read charging levels as well as certain charging thresholds.
 
 ## Install
 
 ```text
-npm i -D svelte-battery
+npm i -D svelte-battery-status
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ This library provides a simple readable store that automatically subscribes to e
 
 ```svelte
 <script lang="ts">
-  import { batteryStore } from 'svelte-battery';
+  import { batteryStore } from 'svelte-battery-status';
 </script>
 
 <ul>
@@ -34,7 +34,7 @@ To subscribe to changes for only a specific selection of values, simply create a
 
 ```svelte
 <script lang="ts">
-  import { batteryStore } from 'svelte-battery';
+  import { batteryStore } from 'svelte-battery-status';
   import { derived } from 'svelte/store';
 
   const level = derived(batteryStore, ($store) => $store.level);

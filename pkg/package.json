@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.4",
   "name": "svelte-battery-status",
   "description": "A store implementation for Svelte to use the Battery Status API for PWAs",
   "svelte": "index.js",

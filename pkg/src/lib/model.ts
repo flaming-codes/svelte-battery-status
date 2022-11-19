@@ -1,4 +1,4 @@
-import { browser } from "$app/env";
+import { browser } from "$app/environment";
 import type { Subscriber } from "svelte/store";
 import type { BatteryManger } from "../app";
 import type { BatteryStore } from "./types";
